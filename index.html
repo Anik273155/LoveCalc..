@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>     
+
+
+ <style>
+      .whole-block{
+        background-image:url('17.webp');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        border-radius:8px;
+      }
+    header{
+       
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+       margin:5px;
+
+    }
+    .plus{
+        margin:10px;
+        font-size:30px;
+    }
+    .card-header{
+       font-size:30px;
+ background-color:orangered;
+ border-radius:10px;
+ color:white;
+ height:45px;
+ display:flex;
+ justify-content:center;
+align-items:center;
+    }
+    .btn{
+        background-color:rgb(47, 255, 75);
+        border:2px solid purple;
+        color:white;
+        width:120px;
+        border-radius:5px;
+        margin:auto;
+        color:white;
+        font-weight:bold;
+   height:30px; 
+   border:3px solid blueviolet;
+        
+    }
+  
+
+button:active{
+   background-color:rgb(179, 255, 0)
+   
+}
+
+
+
+
+    
+    .btn-block{
+        display:flex;
+    margin:auto; 
+    }
+
+
+        
+    
+    .form-inline{
+        display:flex;
+        margin:20px;
+        
+    }
+    .main-header{
+        border:3px solid white;
+          padding:1px;
+          border-radius:5px;
+    }
+    input{
+        height:30px;
+        width:230px;
+    }
+.card-body input{
+    background-color:palegreen;
+    padding:2px;
+    color:blue;
+     text-align:center;
+     border-radius:7px;
+     border:3px solid blueviolet;
+}
+.card-body input placeholder{
+    color:white;
+}
+
+.percentage{
+   
+    align-items:center;
+}
+.form-control{
+    text-align:center;
+    display:flex;
+   margin:auto;
+   background-color:deeppink;
+   border-radius:7px;
+   color:white;
+   padding:2px;
+   color:white;
+   font-size:20px;
+   border:3px solid rgb(131, 200, 223);; 
+  
+   
+} 
+.whole-block{
+    border:5px solid black;
+    margin:2px ;
+}
+.card-footer{
+    text-align:center;
+    font-size:30px;
+    color:red;
+   
+}
+.card-footer{
+    background-color:lightblue;
+}
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="whole-block">
+<div vlass="card">
+    <div class="main-header">
+    <div class="card-header ">LOVE CALCULATOR</div>
+    </div>
+    <br><br>
+    <div class="card-body">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" name=""class="form-control"placeholder="Your Name">
+
+            </div>
+            <div><span class="plus">+</span></div>
+            <div class="form-group">
+                <input type="text" name=""class="form-control"placeholder="Love Name">
+                </div>
+
+            
+        </form>
+        <br>
+        <div class="btn-block">
+        <button class="btn"onclick="checkLove()">Click Me</button>
+    </div>
+    </div>
+    <br>
+    <div class="percentage">
+        <input type="text"name=""class="form-control" id="lovedata"placeholder="Love Percentage">
+    </div>
+    </div>
+    <br><br>
+<div class="card-footer">God Bless Your Relationship</div>
+</div>
+</header>
+</body>
+
+    </div>
+</div>
+</div>
+</html>
+</html>
+    </body>
+    <script>
+        function checkLove(){
+ var lovedata=Math.random()*100;
+  lovedata=Math.floor(lovedata);
+  document.getElementById('lovedata').value=lovedata +"%";
+
+        }
+    </script>
+      </html>
